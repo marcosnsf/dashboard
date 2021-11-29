@@ -1,0 +1,17 @@
+.flex-dashboard{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+div.sidebar{
+    display: block;
+    height: 100%;
+    width: 320px;
+    background-color: black;
+}
+main{
+    display: block;
+    height: 100%;
+    background-color: #ccc;
+    width: calc(100% - 320px);
+}
