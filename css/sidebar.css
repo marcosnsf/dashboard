@@ -7,11 +7,44 @@ div.sidebar{
     display: block;
     height: 100%;
     width: 320px;
-    background-color: black;
+    background-color: #fff;
 }
 main{
     display: block;
     height: 100%;
     background-color: #ccc;
     width: calc(100% - 320px);
+}
+.flex-dashboard header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: white;
+    padding: 10px 30px;
+    
+    border: 1px solid rgba(0,0,0,.0625);
+}
+.sidebar .sidebar-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;
+    padding: 10px 30px;
+    height: 90px;
+    border: 1px solid rgba(0,0,0,.0625);
+    border-right: 0px;
+}
+.sidebar .sidebar-title img{
+    width: 62px;
+    height: 90px;
+}
+.sidebar .sidebar-title h2{
+    font-size:  18px;
+    margin-top: 4px;
+}
+.menu{
+    
+    border-right: 1px solid rgba(0,0,0,.0625);
 }
