@@ -39,3 +39,9 @@ main .main-content{
 .panel-50{
     width: 48%;
 }
+div#ajax-content{
+    width: 100%;
+    border: red solid 1px;
+    height: 200px;
+    margin-top: 20px;
+}
