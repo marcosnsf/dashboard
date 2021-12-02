@@ -41,7 +41,16 @@ main .main-content{
 }
 div#ajax-content{
     width: 100%;
-    border: red solid 1px;
-    height: 200px;
     margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.2);
+}
+div#ajax-content button{
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #fff;
+}
+div#ajax-content button:hover{
+    transform: scale(1.06);
+    transition-duration: 0.2s;
 }
