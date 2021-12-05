@@ -42,7 +42,6 @@ main .main-content{
 div#ajax-content{
     width: 100%;
     margin-top: 20px;
-    padding: 20px;
     background-color: white;
     box-shadow: 0 0 2rem rgba(0,0,0,0.2);
 }
@@ -57,4 +56,10 @@ div#ajax-content button:hover{
 div#ajax-content label{
     font-size: 14px;
     color: #363636;
+}
+div#ajax-content table svg{
+    cursor: pointer;
+}
+div.dynamic-content{
+    padding: 20px;
 }
