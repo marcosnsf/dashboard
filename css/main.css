@@ -54,3 +54,7 @@ div#ajax-content button:hover{
     transform: scale(1.06);
     transition-duration: 0.2s;
 }
+div#ajax-content label{
+    font-size: 14px;
+    color: #363636;
+}
