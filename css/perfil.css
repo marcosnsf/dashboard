@@ -1,0 +1,58 @@
+.perfil-parent{
+    padding: 10px 0;
+}
+.perfil-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px 12px;
+    background-color: white;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2 ) ;
+   
+}
+/* Formatação box img */
+div.img{
+    height:500px;
+    width: 300px; 
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2 ) ;
+}
+/* -------------------- */
+/* Formatação box form */
+div.perfil-img{
+    width: 40%;
+    
+}
+div.perfil-form{
+    width: 60%;
+}
+div.perfil-form input, div.perfil-form select{
+    font-size: 14px ;
+    color: #363636
+}
+div.perfil-form label{
+    font-size: 14px;
+    color: #363636
+}
+div.perfil-form button{
+    margin-top: 10px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #fff;
+    border: none;
+}
+div.perfil-form button:hover{
+    transform: scale(1.01);
+    transition-duration: 0.2s;
+    color: #fff;
+}
+div.perfil-form .custom-file{
+    margin-top: 1rem;
+}
+/* -------------------- */
