@@ -36,6 +36,11 @@ main .main-content{
     transform: scale(1.01);
     transition-duration: 0.2s;
 }
+.panel-row button svg{
+    margin-bottom: 12px;
+    font-size: 30px;
+
+}
 .panel-50{
     width: 48%;
 }
