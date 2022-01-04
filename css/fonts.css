@@ -1,15 +1,15 @@
 @font-face {
-    font-family: "RobotoMono";   
-    src: url('../fonts/RobotoMono-Regular.ttf');
+    font-family: "Montserrat";   
+    src: url('../fonts/Montserrat-Regular.ttf');
     font-weight: normal;
 }
 @font-face {
-    font-family: "RobotoMono";   
-    src: url('../fonts/RobotoMono-Bold.ttf');
+    font-family: "Montserrat";   
+    src: url('../fonts/Montserrat-Bold.ttf');
     font-weight: 600;
 }
 @font-face {
-    font-family: "RobotoMono";   
-    src: url('../fonts/RobotoMono-Light.ttf');
+    font-family: "Montserrat";   
+    src: url('../fonts/Montserrat-Light.ttf');
     font-weight: 300;
 }
