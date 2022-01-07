@@ -105,5 +105,9 @@ div.imc span:nth-child(2){
     color: #a777e3;
     font-weight: 600;
  }
+ /* dashboard */
+ div.dashboard-content{
+     border: red solid;
+ }
 
 
