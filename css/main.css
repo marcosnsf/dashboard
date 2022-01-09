@@ -237,29 +237,20 @@ div.box-value-porcentual svg{
  }
  @media screen and (max-width:1050px){
     .dashboard-flex-parent{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+       
         flex-wrap: wrap;
     }
     .dashboard-box{
-        width: 100%;
-        position: relative;
-        padding-top: 21% ;
-        padding-bottom: 20px;
+        padding: 0;
+        height: 180px;
         margin: 20px;
     }
-    .dashboard-box-wrapper{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: white;
+    div.box-icon{
+        margin-top: 20px;
     }
+    div.box-value-porcentual{
+        margin-top: 4px;
+        margin-bottom: 4px;
+     }
  }
  /* ---------- */
