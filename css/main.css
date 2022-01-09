@@ -113,19 +113,27 @@ div.imc span:nth-child(2){
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-    flex-wrap: wrap;
     justify-content: space-around;
 }
 .dashboard-box{
     width: 100%;
-    max-width: 220px;
-    height: 160px;
+    max-width: 240px;
+    padding-top: 14% ;
+    position: relative;
+    margin: 0 12px;
+    padding-bottom: 20px;
+}
+.dashboard-box-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;padding: 8px;
+    align-items: center;
+    justify-content: center;
     background-color: white;
-    padding: 8px ;
 }
 .dashboard-box:hover{
     transition-duration: 0.5s;
@@ -144,21 +152,36 @@ div.box-icon{
 
 }
 /* Cores icons */
-.box-weith{
+.box-weigth{
     background-color: rgba(110, 142, 251, 0.1 );
+    color: #6283f5;
+}
+.box-value-weigth{
     color: #6283f5;
 }
 .box-pressure{
     background-color: rgba(229, 115, 115, 0.1 );
     color: #ef5350;
 }
+.box-value-pressure{
+    color: #ef5350;
+}
 .box-imc{
     background-color: rgba(220, 231, 117, 0.4 );
+    color: #afb42b;
+}
+.box-value-imc{
     color: #afb42b;
 }
 .box-workout{
     background-color: rgba(255, 138, 101, 0.1 );
     color: #ff5722;
+}
+.box-value-workout{
+    color: #ff5722;
+}
+.box-value-workout span{
+    font-size: 14px;
 }
 /*  */
 div.box-icon svg{
@@ -168,14 +191,16 @@ div.box-icon svg{
 div.value{
     text-transform: uppercase;
     margin-top:4px ;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
+    color: #111;
 }
 div.type{
     text-transform: uppercase;
     margin-top:4px ;
     font-size: 14px;
-    font-weight: 100;
+    font-weight:400;
+    color: #72777a;
 }
 div.box-value-porcentual{
    display: flex; 
@@ -187,3 +212,54 @@ div.box-value-porcentual svg{
     margin-right:8px ;
     margin-top:  4px;
 }
+ /*reponsividade*/
+ @media screen and (max-width:1300px) {
+    .dashboard-box{
+        width: 100%;
+        max-width: 200px;
+        padding-top: 20% ;
+        position: relative;
+        margin: 0 12px;
+        padding-bottom: 20px;
+    }
+    .dashboard-box-wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+ }
+ @media screen and (max-width:1050px){
+    .dashboard-flex-parent{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .dashboard-box{
+        width: 100%;
+        position: relative;
+        padding-top: 21% ;
+        padding-bottom: 20px;
+        margin: 20px;
+    }
+    .dashboard-box-wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+ }
+ /* ---------- */
