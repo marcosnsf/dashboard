@@ -13,6 +13,10 @@
     text-decoration: none;
     color: #72777a;
 }
-.flex-dashboard header a > svg{
+.flex-dashboard header  svg{
     color: #6e8efb;
 } 
+.flex-dashboard .fa-bars{
+    font-size: 22px;
+    cursor: pointer;
+}
