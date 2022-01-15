@@ -3,6 +3,7 @@ let iconMenu = document.getElementById('iconMenu'); //usada para manipular o ico
 let sideBar = document.getElementById('sideBar'); // usada pra manipular a sidebar
 let mainContent = document.getElementById('mainContent'); // usadas para manipular o main 
 let w = window.innerWidth; // variavel responsavel para verificar o tamanho da tela
+sideBar.style.left ='-320px';
 //
 
 //adicionando evento
@@ -15,16 +16,20 @@ window.addEventListener("resize", () => {
 //Funcão de menu
 function responsiveSidebar() {
     if (w <= 671) { //condiçaõ para mobile
-        alert('ola mundo') 
+        if (sideBar.style.left == '-320px') {
+            sideBar.style.left ='0px';
+        } else {
+            sideBar.style.left = '-320px';
+        }
     } else { //condiçao para desktop
         if (sideBar.style.display == 'none') { // condição se estiver ativado o evento
             sideBar.style.display = 'block';
             mainContent.style.width = 'calc(100% - 320px)';
-            mainContent.style.transition  = '0.3s';
+            mainContent.style.transition  = 'all 0.2s';
         } else { // condição se não estiver ativado o evento
             sideBar.style.display = 'none';
             mainContent.style.width = '100%';
-            mainContent.style.transition  = '0.3s';
+            mainContent.style.transition  = 'all 0.2s';
         }
     }
 }

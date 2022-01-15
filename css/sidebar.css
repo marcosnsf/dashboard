@@ -82,8 +82,10 @@ div.menu ul li a:hover {
 @media screen and (max-width:672px) {
     .sidebar {
         position: absolute;
-        background-color: #fff;
+        left: 0;
+        top: 0;
         z-index: 2;
+        transition: all 0.2s;
     }
 
     .sidebar_logout {
