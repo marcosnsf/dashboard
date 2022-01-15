@@ -13,7 +13,7 @@
 
 <body>
     <div class="flex-dashboard">
-        <div class="sidebar">
+        <div id="sideBar" class="sidebar">
             <div class="sidebar-title">
                 <img src="../img/banner.png" alt="">
                 <h2>Health Track</h2>
@@ -51,16 +51,16 @@
                 </ul>
             </div>
         </div>
-        <main>
+        <main id="mainContent">
             <header>
-                
-                    <i class="fa fa-bars"></i> 
-               
+
+                <i id="iconMenu" onclick="responsiveSidebar()" class="fa fa-bars"></i>
+
                 <a href="../index.html">
                     <i class="fas fa-sign-out-alt"></i> SAIR
                 </a>
             </header>
-            <div class="main-content">
+            <div  class="main-content">
                 <div class="main-content-title">
                     <h2>Dashboard</h2>
                 </div>
@@ -145,6 +145,7 @@
 
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../plugins/fontawesome/js/all.min.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 
 </html>

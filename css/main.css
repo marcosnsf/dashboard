@@ -253,4 +253,15 @@ div.box-value-porcentual svg{
         margin-bottom: 4px;
      }
  }
+@media screen and (max-width:672px){
+    main{
+        display: block;
+        height: 100%;
+        background-color: #f7f7f7;
+        width:calc(100%);
+        z-index: 1;
+        position: relative;
+    }    
+}
+
  /* ---------- */
