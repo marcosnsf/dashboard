@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="../css/all.css">
-        <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
-    </head>
-    <body>
-        <div class="flex-dashboard">
-            <div class="sidebar">
-               <div class="sidebar-title">
-                   <img src="../img/banner.png" alt="">
-                   <h2>Health Track</h2>
-               </div>
-               <div class="menu">
-                   <ul>
-                        <li>
-                            <i class="fas fa-home"></i>
-                            <a href="dashbord.html">Home</a>
-                        </li>
-                        <li class="selected">
-                            <i class="fas fa-user"></i>
-                            <a href="perfil.html"> Perfil</a>
-                        </li>
-                        <li>
-                           <i class="fas fa-balance-scale"></i>
-                           <a href="gerenciarpeso.html"> Gerenciar peso e altura</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-heartbeat"></i>
-                            <a href="gerenciarPressao.html"> Gerenciar pressão arterial</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-skating"></i>
-                            <a href="gerenciarAtividades.html"> Gerenciar avidades fisicas</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-utensils"></i>
-                            <a href="gerenciarAlimentos.html"> Gerenciar alimentos</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-calculator"></i>
-                            <a href="calcularIMC.html"> Calcular IMC</a>
-                        </li>
-                       
 
-                   </ul>
-               </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <div class="flex-dashboard">
+        <div id="sideBar" class="sidebar">
+            <div class="sidebar-title">
+                <img src="../img/banner.png" alt="">
+                <h2>Health Track</h2>
             </div>
-            <main>
-                <header>
-                   <a href="dashbord.html">
-                       <i class="fas fa-home"></i> HOME
-                   </a>
-                    <a href="../index.html">
-                        <i class="fas fa-sign-out-alt"></i> SAIR
-                   </a>
-                </header>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i>
+                        <a href="dashbord.html">Home</a>
+                    </li>
+                    <li class="selected">
+                        <i class="fas fa-user"></i>
+                        <a href="perfil.html"> Perfil</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-balance-scale"></i>
+                        <a href="gerenciarpeso.html"> Gerenciar peso e altura</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-heartbeat"></i>
+                        <a href="gerenciarPressao.html"> Gerenciar pressão arterial</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-skating"></i>
+                        <a href="gerenciarAtividades.html"> Gerenciar avidades fisicas</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-utensils"></i>
+                        <a href="gerenciarAlimentos.html"> Gerenciar alimentos</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-calculator"></i>
+                        <a href="calcularIMC.html"> Calcular IMC</a>
+                    </li>
 
-                <div class="main-content">
-                    <div class="main-content-title">
-                        <h2>PERFIL</h2>
-                    </div>
-                   <div class="perfil-parent">
-                       <div class="perfil">
-                           <div class="perfil-img" >
-                           <div class="img" >
-                               
-                           </div>
-                           </div>
-                           <div class="perfil-form">
+
+                </ul>
+            </div>
+        </div>
+        <main id="mainContent">
+            <header>
+
+                <i id="iconMenu" onclick="responsiveSidebar()" class="fa fa-bars"></i>
+
+                <a href="../index.html">
+                    <i class="fas fa-sign-out-alt"></i> SAIR
+                </a>
+            </header>
+
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h2>PERFIL</h2>
+                </div>
+                <div class="perfil-parent">
+                    <div class="perfil">
+                        <div class="perfil-img">
+                            <div class="img">
+
+                            </div>
+                        </div>
+                        <div class="perfil-form">
                             <form>
                                 <div class="form-group">
-                                  <label for="name">Nome completo</label>
-                                  <input type="email" class="form-control" id="name" placeholder="Nome completo">                                  
+                                    <label for="name">Nome completo</label>
+                                    <input type="email" class="form-control" id="name" placeholder="Nome completo">
                                 </div>
                                 <div class="form-group">
-                                  <label for="email">Email</label>
-                                  <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
                                 </div>
                                 <div class="form-group">
                                     <label for="idade">Idade</label>
-                                    <input type="text" class="form-control" id="idade" placeholder="Idade">                                  
-                                  </div>
-                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="idade" placeholder="Idade">
+                                </div>
+                                <div class="form-group">
                                     <label for="gene">Gênero</label>
                                     <select class="form-control" id="gene">
-                                      <option>Feminino</option>
-                                      <option>Masculino</option>
-                                      <option>Outro</option>
-                                      
+                                        <option>Feminino</option>
+                                        <option>Masculino</option>
+                                        <option>Outro</option>
+
                                     </select>
-                                  </div>
-                                  <div class="form-group">
+                                </div>
+                                <div class="form-group">
                                     <label for="senha">Senha</label>
                                     <input type="password" class="form-control" id="senha" placeholder="Senha">
-                                  </div>
+                                </div>
 
-                                  <div class="custom-file">
+                                <div class="custom-file">
                                     <input type="file" class="custom-file-input" id="customFile">
                                     <label class="custom-file-label" for="customFile">Choose file</label>
-                                  </div>
+                                </div>
                                 <button type="submit" class="btn ">salvar</button>
                             </form>
-                           </div>
-                       </div>
-                   </div>
+                        </div>
+                    </div>
                 </div>
-            </main>
-        </div>
-        
-        <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="../plugins/fontawesome/js/all.min.js"></script>
-        <script src="../js/ajax.js"></script>
-    </body>
+            </div>
+        </main>
+    </div>
+
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/fontawesome/js/all.min.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+
 </html>
