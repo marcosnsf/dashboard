@@ -262,6 +262,15 @@ div.box-value-porcentual svg{
         z-index: 1;
         position: relative;
     }    
+    main .main-content{
+        padding: 0  8px ;
+        width: 100%;
+        height:calc(100% - 90px);
+        overflow-y: auto;
+    }
+    .main-content-title h2{
+      text-align: center;
+    }
 }
 
  /* ---------- */
