@@ -77,7 +77,10 @@ div.menu ul li a:hover {
 .sidebar_logout{
     display: none;
 }
-
+.hide{
+    position: absolute;
+    left: -320px;
+}
 /* reponsividade */
 @media screen and (max-width:672px) {
     .sidebar {
