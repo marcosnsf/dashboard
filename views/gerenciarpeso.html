@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="flex-dashboard">
-            <div class="sidebar">
+            <div id="sideBar" class="sidebar">
                <div class="sidebar-title">
                    <img src="../img/banner.png" alt="">
                    <h2>Health Track</h2>
@@ -46,16 +46,19 @@
                             <i class="fas fa-calculator"></i>
                             <a href="calcularIMC.html"> Calcular IMC</a>
                         </li>
-                       
-
+                        <li class="sidebar_logout">
+                            <a href="../index.html">
+                                <i class="fas fa-sign-out-alt"></i> SAIR
+                            </a>
+                        </li>
                    </ul>
                </div>
             </div>
-            <main>
-                <header>
-                   <a href="dashbord.html">
-                       <i class="fas fa-home"></i> HOME
-                   </a>
+            <main id="mainContent">
+                <header >
+
+                    <i id="iconMenu" onclick="responsiveSidebar()" class="fa fa-bars"></i>
+                    
                     <a href="../index.html">
                         <i class="fas fa-sign-out-alt"></i> SAIR
                    </a>
@@ -83,5 +86,6 @@
         <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="../plugins/fontawesome/js/all.min.js"></script>
         <script src="../js/ajax.js"></script>
+        <script src="../js/menu.js"></script>
     </body>
 </html>

@@ -24,11 +24,11 @@ function responsiveSidebar() {
     if (w <= 671) { //condiçaõ para mobile
         if (sideBar.classList.contains('hide') || sideBar.style.left == '-320px') {
             sideBar.style.left = '0px';
-            console.log('teste')
+            console.log('ATIVADO')
 
         } else {
             sideBar.style.left = '-320px';
-            console.log('teste1')
+            console.log('DESATIVADO')
         }
     } else { //condiçao para desktop
         if (sideBar.style.display == 'none') { // condição se estiver ativado o evento
