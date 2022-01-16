@@ -100,7 +100,7 @@ div.menu ul li a:hover {
         top: 0;
         z-index: 2;
         transition: all 0.2s;
-        width: 300px;
+        width: 310px;
         left: -300px;
     }
 

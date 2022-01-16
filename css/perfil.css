@@ -1,12 +1,11 @@
-.perfil-parent{
-    padding: 10px 0;
-}
-.perfil-parent{
+.perfil-parent {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
 }
-.perfil{
+
+.perfil {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,48 +14,97 @@
     width: 100%;
     padding: 20px 12px;
     background-color: white;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2 ) ;
-   
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+
 }
+
 /* Formatação box img */
-div.img{
-    height:500px;
-    width: 300px; 
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2 ) ;
+div.img {
+    height: 500px;
+    width: 300px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     background-image: url("../img/fotoperfil1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /* -------------------- */
 /* Formatação box form */
-div.perfil-img{
+div.perfil-img {
     width: 40%;
-    
+
 }
-div.perfil-form{
+
+div.perfil-form {
     width: 60%;
 }
-div.perfil-form input, div.perfil-form select{
-    font-size: 14px ;
-    color: #363636
-}
-div.perfil-form label{
+
+div.perfil-form input,
+div.perfil-form select {
     font-size: 14px;
     color: #363636
 }
-div.perfil-form button{
+
+div.perfil-form label {
+    font-size: 14px;
+    color: #363636
+}
+
+div.perfil-form button {
     margin-top: 10px;
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: #fff;
     border: none;
 }
-div.perfil-form button:hover{
+
+div.perfil-form button:hover {
     transform: scale(1.01);
     transition-duration: 0.2s;
     color: #fff;
 }
-div.perfil-form .custom-file{
+
+div.perfil-form .custom-file {
     margin-top: 1rem;
 }
+
 /* -------------------- */
+/* responsividade tela perfil */
+@media screen and (max-width:672px) {
+
+    .perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+        padding: 20px 12px;
+        background-color: white;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+
+    }
+
+    .perfil-img {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.img {
+        width: 90%;
+        height: 300px;
+        background-position: center;
+    }
+
+    div.perfil-form {
+        width: 100%;
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width:362px) {}
+
+/*  */
