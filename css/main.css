@@ -49,7 +49,6 @@ div#ajax-content{
     margin-top: 20px;
     background-color: white;
     box-shadow: 0 0 2rem rgba(0,0,0,0.2);
-    transition:  1s;
 }
 div#ajax-content button{
     background: linear-gradient(135deg, #6e8efb, #a777e3);
@@ -291,6 +290,28 @@ div.box-value-porcentual svg{
     }
     .panel-row button:hover{
         transform:unset;
+    }
+    table{
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    table th{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    table td{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .dynamic-content{
+        padding: 0;
+    }
+    .dynamic-content form{
+        padding: 20px;
+    }
+    .dynamic-content form button{
+        width: 100%;
     }
 }
 
