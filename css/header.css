@@ -18,12 +18,16 @@
 .flex-dashboard header svg {
     color: #6e8efb;
 }
-
+#iconMenu{
+    color: #6e8efb;
+}
 .flex-dashboard .fa-bars {
     font-size: 22px;
     cursor: pointer;
 }
-
+header a svg{
+    color: #6e8efb;
+}
 /* reponsividade */
 @media screen and (max-width:672px) {
     .flex-dashboard header a {
