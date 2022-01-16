@@ -28,7 +28,7 @@ function responsiveSidebar() {
 
         } else {
             sideBar.style.left = '-320px';
-            console.log('teste1')
+            console.log('teste')
         }
     } else { //condiçao para desktop
         if (sideBar.style.display == 'none') { // condição se estiver ativado o evento

@@ -7,7 +7,6 @@
 div.sidebar {
     display: block;
     height: 100%;
-    width: 320px;
     background-color: #fff;
 }
 
@@ -89,6 +88,20 @@ div.menu ul li a:hover {
         top: 0;
         z-index: 2;
         transition: all 0.2s;
+    }
+
+    .sidebar_logout {
+        display: block;
+    }
+}
+@media screen and (max-width:362px) {
+    .sidebar {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        transition: all 0.2s;
+        width: 300px;
+        left: -300px;
     }
 
     .sidebar_logout {
