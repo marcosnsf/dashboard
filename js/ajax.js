@@ -12,7 +12,7 @@ function fetchContent(el){
         content.innerHTML = html
         return content
     })
-    .then( () =>{
+    .then( () => {
     const script = document.createElement("script")
     script.async = true
     script.src = '/js/${scriptSRC}.js'
