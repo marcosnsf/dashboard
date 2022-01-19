@@ -11,6 +11,6 @@ $(function () {
             required: true,
             number:true,   
         }
-       } 
+       } ,
     })
 })
